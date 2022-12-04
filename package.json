@@ -1,0 +1,32 @@
+{
+  "name": "vk-bot",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "author": "Frodi1998",
+  "private": true,
+  "scripts": {
+    "build": "rimraf dist && tsc --project tsconfig.prod.json",
+    "build:dev": "tsc",
+    "lint": "npx eslint ./src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "vk-io": "^4.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.10",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.28.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.8.0",
+    "rimraf": "^3.0.2",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.3"
+  }
+}
